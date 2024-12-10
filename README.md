@@ -24,17 +24,20 @@ The synchronous nature of the flip-flops ensures that the shifting of data occur
 Each D flip-flop in the circuit has a Data (D) input, a Clock (CLK) input, and an output (Q). The D input represents the data to be loaded into the flip-flop, while the CLK input is connected to the common clock signal. The output (Q) of each flip-flop is connected to the D input of the next flip-flop, forming a cascade.
 
 **Procedure**
+
 1.Initialize the shift register to a known state (e.g., all zeros).
-
 2.Input a bit serially into the shift register.
-
 3.Shift the contents of the register one position to the right (or left).
-
 4.Output the shifted bit from the last stage of the register.
-
 5.Repeat steps 2-4 for each bit you want to input and shift.
 
 **PROGRAM**
+
+/* 
+Developed by:DHANUJA M
+RegisterNumber:24901079
+*/
+```
 module EXP10(clk, sin, q);
 input clk;
 input sin;
@@ -48,15 +51,15 @@ q[2] <= q[1];
 q[3] <= q[2];
 end
 endmodule
-
-
+```
 **RTL LOGIC FOR SISO Shift Register**
 
-![Screenshot 2024-12-04 185626](https://github.com/user-attachments/assets/5781ed87-3955-4b83-8cd6-dd499b4c63c2)
+![image](https://github.com/23004513/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/138973069/c8ee160b-0e98-4ef3-9f1e-ecc1fa089f01)
 
 **TIMING DIGRAMS FOR SISO Shift Register**
-![Screenshot 2024-12-04 185715](https://github.com/user-attachments/assets/1ae21c21-ea32-46d3-a93e-b5b1f81717ad)
 
+![image](https://github.com/23004513/SERIAL-IN-SERIAL-OUT-SHIFTREGISTER/assets/138973069/84df2e71-7d10-49a5-957c-9b5bf5c43c64)
 
 **RESULTS**
+
 SISO Shift Register using verilog and validating their functionality using their functional tables has successful execution of the program.
